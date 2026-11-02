@@ -158,9 +158,9 @@ In `src/models/user.model.js`, we define the `User` schema:
    git branch -M main
    git push -u origin main
    ```
-3. Copy your GitHub repository URL:
-   `https://github.com/<YOUR_GITHUB_USERNAME>/backend-express-mongodb-crud`
-   and submit it for your evaluation!
+3. Your Public GitHub Repository URL:
+   **https://github.com/harshitwsh/backend-express-mongodb-crud**
+   Submit this URL for your evaluation!
 
 ---
 
