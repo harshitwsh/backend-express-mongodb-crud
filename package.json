@@ -1,0 +1,26 @@
+{
+  "name": "node-express-mongodb-crud",
+  "version": "1.0.0",
+  "description": "Backend REST API with Node.js, Express, MongoDB Atlas and Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "crud",
+    "rest-api"
+  ],
+  "author": "Harshit Yadav",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4"
+  }
+}
