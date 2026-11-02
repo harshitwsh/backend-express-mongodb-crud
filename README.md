@@ -68,7 +68,7 @@ node-express-mongodb-crud/
      ```
 6. Open your local `.env` file and replace `<username>` and `<password>` with your real MongoDB Atlas credentials:
    ```env
-   PORT=5000
+   PORT=5001
    NODE_ENV=development
    MONGO_URI=mongodb+srv://admin:YourPassword123@cluster0.xxxxx.mongodb.net/backend_db?retryWrites=true&w=majority
    ```
@@ -104,8 +104,8 @@ In `src/models/user.model.js`, we define the `User` schema:
    node-express-mongodb-crud/postman_collection.json
    ```
 3. The collection includes pre-configured requests:
-   - **Health Check**: `GET http://localhost:5000/api/health`
-   - **1. Create User**: `POST http://localhost:5000/api/users`
+   - **Health Check**: `GET http://localhost:5001/api/health`
+   - **1. Create User**: `POST http://localhost:5001/api/users`
      ```json
      {
        "name": "John Doe",
@@ -114,16 +114,16 @@ In `src/models/user.model.js`, we define the `User` schema:
      }
      ```
      *(The test script automatically saves the returned `_id` into a collection variable for subsequent requests!)*
-   - **2. Get All Users**: `GET http://localhost:5000/api/users`
-   - **3. Get User By ID**: `GET http://localhost:5000/api/users/{{userId}}`
-   - **4. Update User**: `PUT http://localhost:5000/api/users/{{userId}}`
+   - **2. Get All Users**: `GET http://localhost:5001/api/users`
+   - **3. Get User By ID**: `GET http://localhost:5001/api/users/{{userId}}`
+   - **4. Update User**: `PUT http://localhost:5001/api/users/{{userId}}`
      ```json
      {
        "name": "John Doe Updated",
        "age": 26
      }
      ```
-   - **5. Delete User**: `DELETE http://localhost:5000/api/users/{{userId}}`
+   - **5. Delete User**: `DELETE http://localhost:5001/api/users/{{userId}}`
 
 ---
 
@@ -136,14 +136,14 @@ In `src/models/user.model.js`, we define the `User` schema:
 2. You will see:
    ```text
    ====================================================
-   🚀 Server running on port 5000
-   🌐 Base URL: http://localhost:5000
-   📡 Health Check: http://localhost:5000/api/health
-   👥 Users API: http://localhost:5000/api/users
+   🚀 Server running on port 5001
+   🌐 Base URL: http://localhost:5001
+   📡 Health Check: http://localhost:5001/api/health
+   👥 Users API: http://localhost:5001/api/users
    ====================================================
    ✅ MongoDB Connected: cluster0.xxxxx.mongodb.net
    ```
-3. Open your browser or Postman and visit `http://localhost:5000`.
+3. Open your browser or Postman and visit `http://localhost:5001`.
 
 ---
 
